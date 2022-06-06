@@ -1,2 +1,4 @@
 # Requem-to-Welkin
-A website about our new JRPG game
+This website is about our new JRPG game
+
+Our game is based on our Fate-Condenset FRP game.
