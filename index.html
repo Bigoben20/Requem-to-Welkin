@@ -6,33 +6,50 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Requem to Welkin'e Hoş Geldiniz</title><!--websitenin title'ı-->
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <link rel='stylesheet' href='main.css'> <!--CSS dosyası-->
         <script src='main.js'></script>
     </head>
-    <body style="background-color:#aa1430; color: aliceblue;">
-        <header  style="margin-inline-end: 10%; padding-block-end: 1%;"><!--navigasyon barı-->
-            <nav>
-                <p><h1>Requem to Welkin</h1></p>
-                <img src="IMG_2407.jpg"
-                        alt="Requem to Welkin"
-                        >
-            </nav>
+    <body>
+        <!-- Navbar-->
+        <nav class="navbar">
+            <a class="logo" href="index.html">Fate-Condensed</a>             
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="./pages/Story.html">Story</a></li>
+                <li><a href="./pages/World.html">World</a></li>
+                <li><a href="./pages/CharactersPage.html ">Characters</a></li>
+                <li><a href="https://www.kaderoyunu.com/zar" target="_blank">Roll Dice</a></li>
+                <li><a href="#">About</a></li>
+             </ul>
+             <img src="./assets/img/whitemenu.jpg" class="menu-btn">
+        </nav>
+
+        <header>
+            <div class="header-content">
+                
+                <h2>A Fate-Condensed Story</h2>
+                <div class="line"></div>
+                <h1>Requem to Welkin</h1>
+                <a href="#" class="ctn">Learn More</a>
+
+            </div>
         </header>
 
+        <script>
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
+            
+            
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+
+        </script>
+
+
         <main>
-            <section>
-                <ol type="I">
-                    <li>
-                        <a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" target="_blank" style="color: chartreuse;"><h3>Baldur's Gate Link</h3></a>
-                    </li>
-                    <li>
-                        <a href="pages/Story.html" style="color: chartreuse;"><h3>Story</h3></a>
-                    </li>
-                    <li>
-                        <a href="pages/CharactersPage.html" style="color: chartreuse;"><h3>Characters</h3></a>
-                    </li>
-                </ol>
-            </section>
+            
+            
         </main>
 
         <footer>
