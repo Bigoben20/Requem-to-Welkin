@@ -42,13 +42,14 @@ body{
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 20px;
+  padding: 50px;
   color: whitesmoke;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
+  font-size: x-large;
 }
 
 .nav-links li{
@@ -64,20 +65,15 @@ body{
   font-size: 25px;
   padding: 8px 15px;
   background: #1164b7;
-  border-radius: 5px;
+  border-radius: 7px;
   
 }
 
-.logo a:hover{
-  color: whitesmoke;
-  transform: scale(1.05);
-}
-
 a:hover {
-  color: #479747;
+  color: #00ffa6;
+  transform: scale(1.05);
+
 }
-
-
 
 .mobile-menu {
   margin-top: 0px;
@@ -216,12 +212,6 @@ header{
 
 }
 
-
-
-
-
-
-
 .menu-btn{
   position: absolute;
   top: 3.5vh;
@@ -233,10 +223,11 @@ header{
 
 /* Mobile */
 
-@media only screen and (max-width: 850px){
+@media screen and (max-width: 400px){
   
   .menu-btn{
     display: block;
+    margin-top: -8px;
   }
   
   .navbar{
@@ -246,13 +237,14 @@ header{
     position: absolute;
     top: 30px;
     left: 30px;
+    font-size: small;
   }
   .nav-links{
     flex-direction: column;
     width: 100%;
     height: 100vh;
     justify-content: center;
-    background: #550000;
+    background: #550000b8;
     margin-top: -900px;
     transition: all 0.5s ease;
     
@@ -265,3 +257,43 @@ header{
     margin: 30px auto;
   }
 }
+
+@media screen and (max-width: 850px) and (min-width: 400px){
+  
+  .menu-btn{
+    display: block;
+  }
+  
+  .navbar{
+    padding: 0;
+  }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    transform: scale(0.95);
+
+  }
+  .nav-links{
+    margin-inline-start: 70%;
+    padding-top: 10vh;
+    flex-direction: column;
+    width: 30vw;
+    height: 80vh;
+    justify-content: center;
+    border-radius: 15px;
+    border-top-right-radius: 0px ;
+    background: #550000b8;
+    margin-top: -900px;
+    transition: all 0.5s ease;
+    
+  }
+  .mobile-menu{
+    margin-top: 0px;
+    border-color: #306430;
+  }
+  .nav-links li {
+    margin: 30px auto;
+  }
+}
+
